@@ -1,0 +1,75 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP07rytiz64+FfVDSYwsQoI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GabzDeveloper451/Desafio_Python_30_Dias/blob/main/dia%204%20Marcus\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "VsBz5JsyXjEi"
+      },
+      "outputs": [],
+      "source": [
+        "while True:\n",
+        "  num_dig1=input(\"1º- digite um número inteiro \")\n",
+        "  try:\n",
+        "    numero1=int(num_dig1)\n",
+        "    if numero1 <= 0:\n",
+        "        print(\"digite um número acima de zero\")\n",
+        "    break\n",
+        "\n",
+        "  except ValueError:\n",
+        "    print(\"digite um número inteiro\")\n",
+        "\n",
+        "while True:\n",
+        "  num_dig2=input(\"2º- digite umnúmero inteiro \")\n",
+        "  try:\n",
+        "    numero2=int(num_dig2)\n",
+        "    if numero2 <= 0:\n",
+        "        print(\"digite um número acima de zero\")\n",
+        "    else:\n",
+        "        break\n",
+        "  except ValueError:\n",
+        "    print(\"digite um número inteiro\")\n",
+        "\n",
+        "soma=numero1+numero2\n",
+        "subtracao=numero1-numero2\n",
+        "mutiplicacao=numero1*numero2\n",
+        "divisao=numero1/numero2\n",
+        "\n",
+        "print(f\"\"\"olha, fiz algo bem simples e travei pra que não saisse do que eu precisava \\n\n",
+        "o seu código tá lindo Biel!\\n\n",
+        "eu fiz o mais simples possível, então lá vai ele: \\n\n",
+        "soma= {soma} \\n\n",
+        "subtração= {subtracao} \\n\n",
+        "mutiplicação= {mutiplicacao} \\n\n",
+        "divisao= {divisao} \\n\n",
+        "Bora pro dia 5!!!!\"\"\")"
+      ]
+    }
+  ]
+}
