@@ -85,7 +85,8 @@ while True:
         print("\nRealizando a conta... \n")
         print(f"{float_x:.0f} * {float_y:.0f} = {multiplicacao(float_x, float_y):.0f}")
 
-    sair = input("\nDeseja sair? [S/N]: ")
+    sair = input("\nDeseja sair? [S/N]: ").upper()
+
     if sair == "S".upper():
         print("\nAté mais!")
         break
