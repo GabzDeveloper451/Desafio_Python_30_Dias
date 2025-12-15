@@ -1,4 +1,4 @@
-# Implemente um sistema de notas que classifique a pontuação do usuário (A, B, C, D, F).
+# Desafio 6: Implemente um sistema de notas que classifique a pontuação do usuário (A, B, C, D, F).
 
 # Mesagem de entrada:
 print("Neste programa, você digitará a sua nota e eu a classificarei da seguinte forma: A, B, C, D, F")
