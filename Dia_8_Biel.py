@@ -36,7 +36,7 @@ while True:
     while entrada == "l":
 
         if len(lista_frutas) == 0:
-            print("\n\vERRO: Nada para fazer")
+            print("\n\vERRO: Não há nenhuma fruta na sua lista.")
             break
 
         else:
@@ -50,7 +50,7 @@ while True:
     while entrada == "r":
 
         if len(lista_frutas) == 0:
-            print("\n\vERRO: Nada para fazer")
+            print("\n\vERRO: Não há frutas para remover.")
             break
 
         else:
