@@ -1,7 +1,7 @@
 # Desafio 7: Crie uma lista de 5 frutas e imprima cada uma delas.
 
 # Mensagem de entrada:
-print("Olá, neste programa, você digitará 7 frutas, e eu farei uma lista com cada uma delas.")
+print("Olá, neste programa, você digitará 5 frutas, e eu farei uma lista com cada uma delas.")
 
 # Criando um dicionário de frutas para garantir que o usuário digite uma fruta:
 dict_fruits = {
@@ -233,11 +233,6 @@ dict_fruits = {
 lista_frutas = []
 
 # Definindo as frutas:
-# Criando a lista de frutas:
-lista_frutas = []
-
-# Definindo as frutas:
-
 # Código original:
 while True:
     fruta_1 = input("\n1ª fruta: ").lower()
@@ -323,71 +318,8 @@ while True:
 
     lista_frutas.append(fruta_5)
     break
-
-while True:
-    fruta_6 = input("\n6ª fruta: ").lower()
-    if fruta_6 not in dict_fruits:
-        print("Essa fruta não existe! Tente novamente!")
-        continue
-
-    if fruta_6 in lista_frutas:
-        print("Essa fruta já foi adicionada na lista de frutas!")
-        continue
-
-    if fruta_6 == ' '.strip():
-        print("Você não digitou uma fruta.")
-        continue
-
-    lista_frutas.append(fruta_6)
-    break
-
-while True:
-    fruta_7 = input("\n7ª fruta: ").lower()
-    if fruta_7 not in dict_fruits:
-        print("Essa fruta não existe! Tente novamente!")
-        continue
-
-    if fruta_7 in lista_frutas:
-        print("Essa fruta já foi adicionada na lista de frutas!")
-        continue
-
-    if fruta_7 == ' '.strip():
-        print("Você não digitou uma fruta.")
-        continue
-
-    lista_frutas.append(fruta_7)
-    break
 # Imprimindo a lista final:
 print("\nLista de frutas escolhidas:")
 
 for i, f in enumerate(lista_frutas, start=1):
     print(i, f, sep=' - ')
-
-# Código feito com a ia
-
-# Desafio 7: Crie uma lista de 5 frutas e imprima cada uma delas.
-
-# print("Olá, neste programa, você digitará 5 frutas, e eu farei uma lista com cada uma delas.")
-# 
-# # Lista de frutas válidas (pode ser expandida se quiser)
-# frutas_validas = [
-#     'abacaxi', 'banana', 'maçã', 'laranja', 'uva',
-#     'morango', 'melancia', 'pera', 'manga', 'kiwi'
-# ]
-# 
-# lista_frutas = []
-# 
-# # Loop para coletar 5 frutas
-# while len(lista_frutas) < 5:
-#     fruta = input(f"Digite a fruta {len(lista_frutas)+1}: ").lower()
-#     if fruta not in frutas_validas:
-#         print("Essa fruta não existe!")
-#     elif fruta in lista_frutas:
-#         print("Essa fruta já foi adicionada!")
-#     else:
-#         lista_frutas.append(fruta)
-# 
-# # Imprimindo frutas enumeradas
-# print("\nLista de frutas escolhidas:")
-# for i, fruta in enumerate(lista_frutas, start=1):
-#     print(f"{i}. {fruta}")
