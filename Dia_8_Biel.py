@@ -1,6 +1,6 @@
 # Desafio 8: Adicione uma fruta, remova outra e ordene a lista em ordem alfabética.
 
-print("\n --- Desafio 8 ---")
+print("\n --- Desafio 8 ---\n")
 lista_frutas = []
 operador_valido = 'alrs'
 
