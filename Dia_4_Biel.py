@@ -1,97 +1,40 @@
-# Desafio 4: Peça ao usuário dois números e imprima a soma, subtração, multiplicação e divisão deles.
+# Desafio 3: Calcule o Índice de Massa Corporal (IMC) usando entradas de peso e altura.
 
-print("\n--- desafio 4 ---\n")
+print("\n--- Desafio 3 ---\n")
 
-""" Mensagem de início """
+# Imprimindo uma mensagem de entrada
+print("Olá, com esse programa, calcularei o seu Índice de Massa Corporal (IMC) para isso: ")
 
-import os
-print(
-    "\n\tOlá, neste programa, calcularei a soma, a subtração,"
-    " a multiplicação e a divisão, de dois números à sua escolha."
-)
+# Salvando o peso do usuário
 
-# Definindo os números
+# Garantindo que o usuário digite apenas o valor numérico de seu peso
 while True:
-    x = input("\nDigite o primeiro número: ")
-    if len(x) == 0:
-        print("Digite ao menos um número.")
-        continue
-
+    peso = input("\nDigite quanto você pesa ex(69.2): ")
     try:
-        float_x = float(x)
-    except:
-        print("Digite um número válido.")
-        continue
-
-    y = input("\nDigite o segundo número: ")
-
-    if len(y) == 0:
-        print("Digite ao menos um número.")
-        continue
-
-    try:
-        float_y = float(y)
-    except:
-        print("Digite um número válido.")
-        continue
-
-
-
-# Definindo o valor de cada variável de cálculo
-
-    def soma(x, y):
-        return x + y
-
-    def subtracao(x, y):
-        return x - y
-
-    def multiplicacao(x, y):
-        return x * y
-
-    def divisao(x, y):
-        return x / y
-
-# Salvando se o usuário quer dividir, multiplicar, somar, ou subtrair
-    os.system("clear")
-    while True:
-        operadores_permitidos = '+-/*'
-        operador = input("\nQual operador você deseja escolher? +-/*: ")
-
-        if operador not in operadores_permitidos:
-            print("Digite um operador válido.")
+        peso = float(peso)
+        if peso <= 0:
+            print("Por favor, digite um valor maior que zero.")
             continue
-        elif operador == '':
-            print("\nVocê não digitou nenhum operador.")
-        else:
-            break
-
-    # Realizando a conta:
-
-    if operador == '+':
-        os.system("clear")
-        print("\nRealizando a conta... \n")
-        print(f"{float_x:.0f} + {float_y:.0f} = {soma(float_x, float_y):.0f}")
-
-    elif operador == '-':
-        os.system("clear")
-        print("\nRealizando a conta... \n")
-        print(f"{float_x:.0f} - {float_y:.0f} = {subtracao(float_x, float_y):.0f}")
-
-    elif operador == '/':
-        os.system("clear")
-        print("\nRealzando a conta... \n")
-        print(f"{float_x:.0f} * {float_y:.0f} = {subtracao(float_x, float_y):.0f}").strip()
-
-    else:
-        os.system("clear")
-        print("\nRealizando a conta... \n")
-        print(f"{float_x:.0f} * {float_y:.0f} = {multiplicacao(float_x, float_y):.0f}")
-
-    sair = input("\nDeseja sair? [S/N]: ").upper()
-
-    if sair == "S".upper():
-        print("\nAté mais!")
         break
+    except ValueError:
+        print("Por favor, digite apenas o valor numérico de seu peso.")
 
-    else:
-        continue
+# Salvando a altura do usuário
+while True:
+    altura = input("\nDigite a sua altura ex(1.75): ")
+    try:
+       altura = float(altura)
+       if altura <= 0:
+           print("Por favor, digite um valor maior que zero.")
+           continue
+       break
+    except ValueError:
+        print("Por favor, digite apenas o valor numérico de sua altura.")
+# Salvando o cálculo do IMC do usuário
+imc = peso / (altura ** 2)
+
+# Imprimino o IMC do usuário
+print(
+    "\n Calculando..."
+    f"\n O seu Índice de Massa corporal é de {imc:.2f} kg/m²"
+)
