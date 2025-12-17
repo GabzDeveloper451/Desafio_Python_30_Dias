@@ -1,5 +1,6 @@
 # Desafio 8: Adicione uma fruta, remova outra e ordene a lista em ordem alfabética.
 
+print("\n --- Desafio 8 ---")
 lista_frutas = []
 operador_valido = 'alrs'
 
@@ -36,7 +37,7 @@ while True:
     while entrada == "l":
 
         if len(lista_frutas) == 0:
-            print("\n\vERRO: Não há nenhuma fruta na sua lista.")
+            print("\n\vERRO: Não há frutas para listar.")
             break
 
         else:
