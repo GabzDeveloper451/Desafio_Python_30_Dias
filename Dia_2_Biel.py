@@ -1,5 +1,7 @@
 # Desafio 2: Crie variáveis para seu nome, idade e altura. Imprima uma frase combinando-as.
 
+print("\n--- Desafio 2 ---\n")
+
 # Definindo a variável do nome
 nome = "Gabriel"
 
