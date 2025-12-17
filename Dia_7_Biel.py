@@ -1,5 +1,7 @@
 # Desafio 7: Crie uma lista de 5 frutas e imprima cada uma delas.
 
+print("\n--- Desafio 7 ---")
+
 # Mensagem de entrada:
 print("Olá, neste programa, você digitará 5 frutas, e eu farei uma lista com cada uma delas.")
 
