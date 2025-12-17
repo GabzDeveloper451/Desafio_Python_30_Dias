@@ -1,5 +1,7 @@
 # Desafio 3: Calcule o Índice de Massa Corporal (IMC) usando entradas de peso e altura.
 
+print("\n--- Desafio 3 ---\n")
+
 # Imprimindo uma mensagem de entrada
 print("Olá, com esse programa, calcularei o seu Índice de Massa Corporal (IMC) para isso: ")
 
