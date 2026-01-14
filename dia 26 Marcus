@@ -1,0 +1,52 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMMwGmPTs2zcodXYTb1fbg0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GabzDeveloper451/Desafio_Python_30_Dias/blob/main/dia%2026%20Marcus\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Use uma função lambda com map ou filter para processar uma lista de números.\n",
+        "\n",
+        "#criando lista\n",
+        "numeros = [10, 20, 30, 40, 50]\n",
+        "\n",
+        "#função lambda\n",
+        "divididos = list(map(lambda x: x/10, numeros))\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(f\"Números originais: {numeros}\")\n",
+        "print(f\"Números divididos por 10: {divididos}\")"
+      ],
+      "metadata": {
+        "id": "FY6hNihSUO7M"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
